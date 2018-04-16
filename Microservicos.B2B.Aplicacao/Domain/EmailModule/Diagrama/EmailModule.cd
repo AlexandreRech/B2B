@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Microservicos.B2B.Domain.EmailModule.Email">
+    <Position X="4.75" Y="1.25" Width="2.25" />
+    <AssociationLine Name="Destinatarios" Type="Microservicos.B2B.Domain.EmailModule.EnderecoEmail" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="1.75" />
+        <Point X="10" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="DestinatariosEmCopia" Type="Microservicos.B2B.Domain.EmailModule.EnderecoEmail" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="2.5" />
+        <Point X="10" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="DestinatariosEmCopiaOculta" Type="Microservicos.B2B.Domain.EmailModule.EnderecoEmail" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="2.125" />
+        <Point X="10" Y="2.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAACAAAAAAAAAAAAAAAEAGAgQABAAAAAA=</HashCode>
+      <FileName>Domain\EmailModule\Email.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Destinatarios" />
+      <Property Name="DestinatariosEmCopia" />
+      <Property Name="DestinatariosEmCopiaOculta" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Microservicos.B2B.Domain.EmailModule.EnderecoEmail">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Domain\EmailModule\EnderecoEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microservicos.B2B.Domain.EmailModule.EnvioEmail">
+    <Position X="4.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACEAAAAAAAAAQAAAAAAAAAAAAAAAAAgAgAA=</HashCode>
+      <FileName>Domain\EmailModule\EnvioEmail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Conta" />
+      <Property Name="Email" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Microservicos.B2B.Domain.EmailModule.ContaEmail">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\EmailModule\ContaEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microservicos.B2B.Domain.EmailModule.RecepcaoEmailComFalha">
+    <Position X="1" Y="1.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CACAAAAAAAIEAAEAAAAAAAAAAAAAIABEAAAAAAAAAAE=</HashCode>
+      <FileName>Domain\EmailModule\RecepcaoEmailComFalha.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_email" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
